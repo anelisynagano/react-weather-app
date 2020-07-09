@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import key from './keys';
 
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=Lisbon&appid=00b3a5ed16ed1463a44332935c9a8806')
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Lisbon&appid=${key}`)
       .then(res => res.json())
       // .then() receives an anonymous function === .then(() => {})
       .then(data => {
