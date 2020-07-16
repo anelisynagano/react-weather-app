@@ -21,3 +21,7 @@
 10. pass `onSearch` to `Search.js`.
 
 11. create a method `handleSubmit` that will be called once the form is submitted, and it will call the prop `onSearch` with the state text as argument.
+
+12. change `Search.js` to a functional component using ***React Hooks***
+
+13. call `Search.js` on `Home.js` instead of `App.js`

@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Search from './components/Search';
 import key from './keys';
 
 
@@ -47,9 +46,8 @@ class App extends Component {
     return (
       <>
         <Navbar />
-        <Search onSearch={this.onSearch} />
         <Switch>
-          <Route exact path='/' render={() => data && <Home {...data} cityName={data.city.name} />} />
+          <Route exact path='/' render={() => data && <Home {...data} onSearch={this.onSearch} cityName={data.city.name} />} />
           <Route path='/contact' component={Contact} />
         </Switch>
         <Footer />
