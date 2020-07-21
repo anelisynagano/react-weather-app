@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Lisbon&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Lisbon&appid=${key}&units=metric`)
       .then(res => res.json())
       // .then() receives an anonymous function === .then(() => {})
       .then(data => {
@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   onSearch = (text) => {
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${text}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${text}&appid=${key}&units=metric`)
       .then(res => res.json())
       .then(data => {
         this.setState({

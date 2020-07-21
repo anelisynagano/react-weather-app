@@ -25,3 +25,18 @@
 12. change `Search.js` to a functional component using ***React Hooks***
 
 13. call `Search.js` on `Home.js` instead of `App.js`
+
+14. create a functional component `DaysList.js` and call it on `Home.js`
+
+15. add a state to `DaysList.js` that will hold the information of 5 objects of the array of 40 elements of data that we receive as props.
+
+16. create a method that will help you choose only 1 information of the next 5 upcoming days. These 5 objects should be related to either average weather of the day, or a certain time of each upcoming day.
+
+tip: use the method `.filter()` and `.includes()`
+tip2: don't forget to re-render our app every time there is a change on the props.
+
+17. for each element on the array, show the component `Day.js`
+
+18. `Day.js` should contain the temperature, feels like, humidity and the icon corresponding to the weather
+
+tip: you can use the library [Moment](https://www.npmjs.com/package/react-moment) to format the date
