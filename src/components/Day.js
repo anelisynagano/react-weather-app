@@ -2,7 +2,6 @@ import React from 'react';
 import Moment from 'react-moment';
 
 const Day = (props) => {
-    console.log('day', props);
     return (
         <div>
             <div>

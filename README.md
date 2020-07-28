@@ -40,3 +40,17 @@ tip2: don't forget to re-render our app every time there is a change on the prop
 18. `Day.js` should contain the temperature, feels like, humidity and the icon corresponding to the weather
 
 tip: you can use the library [Moment](https://www.npmjs.com/package/react-moment) to format the date
+
+19. using the geolocation API, get user's current location and fetch the info (don't forget to check weather API URL for using latitude and longitude).
+
+tip: you may use the fetchData method and just change the fetch URL to the one with latitude and longitude.
+
+20. create an `Error.js` component that will be shown in case the user denies geolocation.
+
+tip: on the `getCurrentPosition()` method, you also have access to an ***error*** argument.
+
+21. create a `Loading.js` component that will be shown while the information is loading from the API, or when the user has not yet allowed geolocation.
+
+tip: you can use a library such as [react-spinners](https://www.npmjs.com/package/react-spinners) for premade loading spinners.
+
+22. on our render from `Home` component, either show `Home.js`, `Loading.js` or `Error.js`
